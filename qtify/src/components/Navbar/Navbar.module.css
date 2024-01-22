@@ -3,10 +3,13 @@
   height: 74px;
   width: 100vw;
   padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.navbar_links {
+/* .navbar_links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-}
+} */
