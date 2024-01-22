@@ -10,7 +10,7 @@ const Navbar = () => {
       <a href="/" className={styles.navbar_links}>
         <Logo />
         <Searchbar placeholder={"Search a album of your choice"} />
-        {/* <Feedback /> */}
+        <Feedback text={"Give Feedback"} />
       </a>
     </nav>
   );

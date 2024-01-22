@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "../Feedback/Feedback.module.css";
 
-const Feedback = () => {
+const Feedback = ({ text }) => {
   return (
     <>
-      <button className={styles.btn}>Give Feedback</button>
+      <button className={styles.btn}>{text}</button>
     </>
   );
 };
