@@ -1,15 +1,36 @@
 .wrapper {
   width: 100%;
   height: 270px;
-  display: block;
   align-items: center;
   position: relative;
 }
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 799px;
   height: 212px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  font-weight: 600;
+  padding-top: 10px;
+  font-size: 32px;
+  line-height: 48px;
+  width: 556px;
+  height: 100px;
+}
+.hero_image {
+  width: 212px;
+  height: 212px;
+  justify-content: center;
+  align-items: center;
 }
