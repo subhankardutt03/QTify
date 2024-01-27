@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Card/Card.module.css";
 import { Tooltip, Chip } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Card = ({ data, type }) => {
   const getCard = (type) => {
@@ -9,24 +10,24 @@ const Card = ({ data, type }) => {
         const { image, songs, slug, title, follows } = data;
         return (
           <Tooltip placement="top" arrow title={`${songs.length} songs`}>
-            {/* <a href={`/album/${slug}`}> */}
-            <div className={styles.wrapper}>
-              <div className={styles.card}>
-                <img src={image} alt="song" loading="lazy" />
-                <div className={styles.banner}>
-                  <Chip
-                    sx={{ backgroundColor: "black", color: "white" }}
-                    className={styles.Chip}
-                    label={`${follows} Follows`}
-                    size="small"
-                  ></Chip>
+            <Link to={`/album/${slug}`}>
+              <div className={styles.wrapper}>
+                <div className={styles.card}>
+                  <img src={image} alt="song" loading="lazy" />
+                  <div className={styles.banner}>
+                    <Chip
+                      sx={{ backgroundColor: "black", color: "white" }}
+                      className={styles.Chip}
+                      label={`${follows} Follows`}
+                      size="small"
+                    ></Chip>
+                  </div>
+                </div>
+                <div className={styles.titleWrapper}>
+                  <p>{title}</p>
                 </div>
               </div>
-              <div className={styles.titleWrapper}>
-                <p>{title}</p>
-              </div>
-            </div>
-            {/* </a> */}
+            </Link>
           </Tooltip>
         );
       }

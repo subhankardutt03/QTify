@@ -26,6 +26,8 @@
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  /* color: var(--color-white);
+  text-decoration: none; */
 }
 .pill {
   font-size: 12px;
