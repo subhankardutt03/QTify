@@ -28,12 +28,6 @@ function App() {
 
   return (
     <>
-      {/* <Navbar />
-      <Hero
-        text1={"100 Thousand Songs, ad-free"}
-        text2={"Over thousands podcast episodes"}
-      />
-      <TopAlbums /> */}
       <div>
         <Navbar/>
         <Outlet context={{ data : {topAlbums, newAlbums, songs} }}/>

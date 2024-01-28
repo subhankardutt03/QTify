@@ -16,6 +16,7 @@ const HomePage = () => {
       <div className={styles.wrapper}>
         <Section title="Top Albums" data={topAlbums} type="album" />
         <Section title="New Albums" data={newAlbums} type="album" />
+        {/* <Section title="Songs" data={songs} type="song" /> */}
       </div>
     </>
   );
