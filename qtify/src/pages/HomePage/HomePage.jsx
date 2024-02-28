@@ -4,6 +4,7 @@ import Section from "../../components/Section/Section";
 import styles from "./HomePage.module.css";
 import { useOutletContext } from "react-router-dom";
 import { fetchFilters } from "../../api/api";
+import Faq from "../../components/Faq/Faq";
 
 const HomePage = () => {
   const { data } = useOutletContext();
@@ -17,8 +18,14 @@ const HomePage = () => {
       <div className={styles.wrapper}>
         <Section title="Top Albums" data={topAlbums} type="album" />
         <Section title="New Albums" data={newAlbums} type="album" />
-        <Section title="Songs" data={songs} type="song" filterSource={fetchFilters} />
+        <Section
+          title="Songs"
+          data={songs}
+          type="song"
+          filterSource={fetchFilters}
+        />
       </div>
+      <Faq />
     </>
   );
 };

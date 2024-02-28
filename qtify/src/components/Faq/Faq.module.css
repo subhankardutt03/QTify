@@ -1,0 +1,28 @@
+.wrapper {
+  width: 1135px;
+  height: 245px;
+  margin: 0 auto;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600px;
+  font-size: 50px;
+  line-height: 75px;
+}
+.accordion {
+  margin-bottom: 10px !important;
+}
+.accordionSummary {
+  background-color: var(--color-black) !important;
+  color: var(--color-white) !important;
+  border: 1px var(--color-white) solid !important;
+  border-radius: 5px !important;
+}
+.AccordionIcon {
+  color: var(--color-primary);
+}
+.AccordionDetails {
+  background-color: var(--color-white) !important;
+  /* border-radius: 0px 0px 10px 10px !important; */
+}
